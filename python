@@ -1,0 +1,46 @@
+# Function to create a list
+def create_list():
+    my_list = []  # Empty list
+    n = int(input("Enter the number of elements for the list: "))
+    
+    for i in range(n):
+        element = int(input("Enter element {}: ".format(i + 1)))
+        my_list.append(element)
+    
+    return my_list
+
+# Function to print the elements of a list
+def print_list(my_list):
+    print("List:", my_list)
+
+# Function to calculate the sum of elements in a list
+def calculate_sum(my_list):
+    return sum(my_list)
+
+# Function to find the maximum element in a list
+def find_max(my_list):
+    return max(my_list)
+
+# Function to find the minimum element in a list
+def find_min(my_list):
+    return min(my_list)
+
+# Main program
+if __name__ == "__main__":
+    # Create a list
+    my_list = create_list()
+
+    # Print the list
+    print_list(my_list)
+
+    # Calculate and print the sum of elements
+    sum_of_elements = calculate_sum(my_list)
+    print("Sum of elements:", sum_of_elements)
+
+    # Find and print the maximum element
+    max_element = find_max(my_list)
+    print("Maximum element:", max_element)
+
+    # Find and print the minimum element
+    min_element = find_min(my_list)
+    print("Minimum element:", min_element)
